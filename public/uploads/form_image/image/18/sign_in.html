@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>Sapos</title>
+  <link rel="shortcut icon" type="image/x-icon" href="/assets/logoSapos-circle-7ed69b613dfb0f129cfff13fcf114f3584b13cb25ec6f53a2ed732e2002fa51d.png" />
+
+  <link rel="stylesheet" media="all" href="/assets/application-5e76f7531401609232c5277b252f9aee097ea86a9012300e40f5e767e19ea978.css" debug="false" />
+
+
+
+
+  <script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1"></script>
+<script src="/assets/jquery-ui/version.self-c8e3d1203da26ea7efdf83c1eabb3f0ba55cb68e463f5ccf0d77bd15ce6a8e61.js?body=1"></script>
+<script src="/assets/jquery-ui/data.self-2067c82e6fe39a9cba5623206a5dc28d5c60d26b95cd100855b78cacf72865b8.js?body=1"></script>
+<script src="/assets/jquery-ui/disable-selection.self-5675f71f2fbbc6857ea700ba843af748b50dbc0150cc87932a7d05ec016bb659.js?body=1"></script>
+<script src="/assets/jquery-ui/focusable.self-426e99e67d1f1bd4cb444fd878ee63a6de1f5d1d61451e43022c86214b9eec64.js?body=1"></script>
+<script src="/assets/jquery-ui/form.self-711978b53107be2d9ef1b7369beb151b229cefa8c1405a056d3c34262d5b477e.js?body=1"></script>
+<script src="/assets/jquery-ui/ie.self-163eb039dcb1e0c3471b7d91386eabb8753da6906e84824c019f9ff56bdb83a6.js?body=1"></script>
+<script src="/assets/jquery-ui/keycode.self-ad63cd20acf49dd333bbbc537454d7d475bd610eb5b88de0dca009f0c3d314b1.js?body=1"></script>
+<script src="/assets/jquery-ui/escape-selector.self-43e4d61501e4ffb1ecba387affbae1eb3e1c863ab0b0e71897851cddd246e50e.js?body=1"></script>
+<script src="/assets/jquery-ui/labels.self-c0448a3cb597a9a9429be814ab0e9ed2a14d85604555b4cff897adf3f0415f38.js?body=1"></script>
+<script src="/assets/jquery-ui/jquery-1-7.self-22c197e38fc01a29431530c4c5c7263e26d2b611994b1f9c5c8c900a97b4bc44.js?body=1"></script>
+<script src="/assets/jquery-ui/plugin.self-d8f576c8e073ca51f095505f47bd09d306b875404cd90afcbb6338287cfb0247.js?body=1"></script>
+<script src="/assets/jquery-ui/safe-active-element.self-a1f1a1a7dae3269ce03f6fffb2dcc9b4a7490f5d546c65d54417bec3be24b668.js?body=1"></script>
+<script src="/assets/jquery-ui/safe-blur.self-2cc24c46132d51c7724f6371154241b0a81c9bae5d5681d8f62b01ce46236726.js?body=1"></script>
+<script src="/assets/jquery-ui/scroll-parent.self-38e26a71a450a29fb63425e8f589a7046862f927eb0a1dbf6a6c44da05196d2e.js?body=1"></script>
+<script src="/assets/jquery-ui/tabbable.self-f3f62ceed772d3a325cebd6a03221f8a8cb02c6150f4feba738c6525a2953690.js?body=1"></script>
+<script src="/assets/jquery-ui/unique-id.self-66e85ac85cd0b6b8b1bb89369fc65f608f716869dc0930862a8d421a57a9580a.js?body=1"></script>
+<script src="/assets/jquery-ui/core.self-886760af898381620a8980841c646ae70e894b5292c3138e6dfd75b6904deffb.js?body=1"></script>
+<script src="/assets/jquery-ui/effect.self-776455da1682afff3a4974146aa96ca840597b879ed3797af0604063527443c6.js?body=1"></script>
+<script src="/assets/jquery-ui/form-reset-mixin.self-3a447942586b5719fdd7f1d1a3ac0da9e757a0eb8f4a7cb145f6deb820d2dc54.js?body=1"></script>
+<script src="/assets/jquery-ui/position.self-1b49c8c521e67a4a88bfdad6b4d944d33686d25009a0e40a1e170acdd7b6962a.js?body=1"></script>
+<script src="/assets/jquery-ui/widget.self-fca20bcec06d192f97cffa6e734e24360e227237b8ae7d7e7e60754df7d5444f.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-blind.self-2f8923f5c3073717dad35ac1f9bd4dbc13d2f9c8128f7dbea9819921338271f4.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-bounce.self-ca3686abc7c667b5380422af36b618923c2fc8e901b3eb2ff627f1cdef60486a.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-clip.self-9e606afd1b0d1679f42b1ce5c2ad29f242ed98a9b1a473a9ef8a8bf10df2afe4.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-drop.self-481600061a28b5621b1d78187468e63f057665ce6af6401db851f9b79e345965.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-explode.self-b5f68a634df4bc19111474eb15bcd99597dc19c721b33647fbb04f2bb6d52ca3.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-fade.self-60febf4d2a1f6f013852a42da59c74d840f205715162a2b11e734fd4dd73a519.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-fold.self-78adc6cc7f2d8dac25e8c82164ae61cc3160bb5280ed3d24dd96a576e37a6e46.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-highlight.self-842a0db414abed8fbccb48908bd933b32c93c6b9d725160c85dc2bde708fa753.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-size.self-2094878ac7ba38dcd4539cd4595fa4d6ed7182be8bb6f03785684a5e470a293d.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-scale.self-88872e591cdbf30b3d09946e82e96e25bcd99b03857ead844a503301e6de71f3.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-puff.self-be0ba8a98762bf10054deb4e8bdf92c44de0d570714624d16c396f1ffe3a82d6.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-pulsate.self-bf83d1979be265f242fceb95cc3cfeca5467e4aab9cdea27ebb6f2e17bdaae2e.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-shake.self-867270f4e72f7895d38b10fdf9a6ba20f22bee88ac4d79654a9227c14141e1ca.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-slide.self-b59b0b36df7b3e5e4f4190ab51e5c212744d2b34d5ed14c96bfe9c8a3096c00b.js?body=1"></script>
+<script src="/assets/jquery-ui/effects/effect-transfer.self-5ab6d30ecb0b73e2b9a528f6d66c0732ba43a93a5326d88dae547f0c7c759e79.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/accordion.self-267aabfe487e53fce0399a77f9030a87b9d8a409eb30c4c85c5637da9ac35429.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/menu.self-0730fe713007bd93e6db569352a20ed92448299505ff6f525bc0dc6dd488254e.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/autocomplete.self-6a89d7a43741ec810ef95de143a7c0297e2e4368ebecff64493ebb7a9ac3a524.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/controlgroup.self-0b7409f97114a33de116bd5429e9df199cbdea3f276d8bd725c4c2c60f244711.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/checkboxradio.self-60f68cb16012ef210c931076ada2d65d54a8c74a2dc71ce383af758460f8b686.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/button.self-659b51f6fb5303f90ed8cf551509063770a50168a15795ba834b08f8bf2e0ce0.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/datepicker.self-2af0dec09da99d687c31fc224e940687a4eb3694e7b38b0871bba475cad86120.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/mouse.self-f0790a202dcf54fab051e71b042335d5346f9cceb0f645223c1dab93f349a04b.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/draggable.self-42c3eda0b49f105628cea7580fe38c7ed77467cee384bb2c4e095a2bd0a172e6.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/resizable.self-1a46c2f5b876918e02bf979080e56f57846590cd880721bca5058e84f7f60bae.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/dialog.self-2bd687f9580c0be4213c50b4bb1211c28ceedb045eba954e63d40bfbb4d1affd.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/droppable.self-4e3be0d7524dd1852e3b37ae00cd0c351c6178bcad39b17315cca941ddd44148.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/progressbar.self-3bf965ce4e8ade2f07336ae5ffce7fe58897333238561761ffcb16f31af673fc.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/selectable.self-a364da09c555890f5bb64704711594a88e94988edb285735bda59431a749226e.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/selectmenu.self-43e0fc6b5fba037933a7d89a5b2a7127aa9c7494cc605c2dcd3146265e2d3d35.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/slider.self-f166e8b345d6a2376ab8f43b05ab7629016706df83f2d96113cf5d8905c3d028.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/sortable.self-6e5e1f07a29b5a89ec1d359363d2800904e3ae548a38ab2f8eded36746d1adbe.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/spinner.self-2769386b6b06e175a13ccdcd6d2d0cd40c45cec19607bcb818cee0704c165557.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/tabs.self-b7f60535e992224ca66c3f11dc943eba9ef42a9605241e27b9dba24c7efb287e.js?body=1"></script>
+<script src="/assets/jquery-ui/widgets/tooltip.self-50ae9488af573c99a78b60209bce5c7a4affc4e175fef523942acb163dd8deb8.js?body=1"></script>
+<script src="/assets/jquery-ui.self-d4c1ae19d9b853ec1c8c83784fa979bbe4075a84932a080bbd7d7706240410e1.js?body=1"></script>
+<script src="/assets/jquery_ujs.self-784a997f6726036b1993eb2217c9cb558e1cbb801c6da88105588c56f13b466a.js?body=1"></script>
+<script src="/assets/getprototypeof.self-04c947e0c893fd4c310d55ab95bfeed885056fb90dc37ae99b376633d2ba624f.js?body=1"></script>
+<script src="/assets/jquery-ui-timepicker-addon.self-8a130d6795869e529afec91438bd1b0f5d0c5be561f78c97c5ed563b5c04ac02.js?body=1"></script>
+<script src="/assets/jquery/date_picker_bridge.self-bbc2e55f0e5b2553a98623083badf3622a0f17b185721d81837bfebf02808fc0.js?body=1"></script>
+<script src="/assets/jquery/draggable_lists.self-cc862fcc6a9d5752bb2eac2ef5d8bf717665835637d5e3439fbe0fbbad971bd8.js?body=1"></script>
+<script src="/assets/jquery.visible.min.self-99db878304a2d7b56bb42c949b0d762998ff37ef7a34632f671a02fea5680b77.js?body=1"></script>
+<script src="/assets/jquery/active_scaffold.self-b7e503e219b27ad8f62b1235b5550fa04df7f06dfc6f7bac3e010dda5cbaa49f.js?body=1"></script>
+<script src="/assets/jquery/jquery.editinplace.self-42946c9af7fef732542e930c18a17c22b0299ea72edf58f3164b2bf305353eb5.js?body=1"></script>
+<script src="/assets/jquery/record_select.self-305ab6a2d7f2faf35ce6bf6fde294d2b3017dd7aa89f8f8818cf1ab10fc6566f.js?body=1"></script>
+<script src="/assets/record_select.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1"></script>
+<script src="/assets/active_scaffold.self-7c51ff8604b7109506ce2ddd48c5dbed33c428de1a731b86518272b9ff031938.js?body=1"></script>
+<script src="/assets/codemirror.self-ce134e372d984fe4e9e1548e3442b5f4caf908f610337dd20f97392a8bce3551.js?body=1"></script>
+<script src="/assets/codemirror/modes/sql.self-d9855b9d7ac2cf16a9fa675981787e13a6b70c50f8bb179a3224d484c8f45072.js?body=1"></script>
+<script src="/assets/codemirror/modes/xml.self-b01f14b4742e6ee4bad6cd05f948bac4dc091eb4d771ddf38c281f6f86ce9cae.js?body=1"></script>
+<script src="/assets/codemirror/addons/mode/simple.self-aa2b7afe9f920768230fd903dff388fdb30b4492758fc74bdb8f5d4f0d63654d.js?body=1"></script>
+<script src="/assets/codemirror/addons/mode/multiplex.self-5e031101ea20c99902e5f97568a27ef501ee126d7ae16492c2c23100939caaa9.js?body=1"></script>
+<script src="/assets/codemirror/modes/handlebars.self-896b7a92e92d3a962f007e4c67df26d4b9d8ccae8ec1030ad272c08f59a7eb07.js?body=1"></script>
+<script src="/assets/chronoline/chronoline.self-38de3734a55b509c78156c1f6787bd19138ed3d63793f3390fc426cc456d313f.js?body=1"></script>
+<script src="/assets/chronoline/raphael-min.self-a630b9769fc746597b1c61d6c781dcf59cbe0eabbd247360a9c87ba8e3ca9d5c.js?body=1"></script>
+<script src="/assets/class_enrollments.self-efabebfe6e45cc43af652f350bc9cc5ea23b016d1f8926cea3c3ba23ffe53b48.js?body=1"></script>
+<script src="/assets/codemirror.sql.custom.self-5bfe6587fe2d94f3be64e08c340a6e2cbc7c648efa2b438dbf993e534468c790.js?body=1"></script>
+<script src="/assets/course_research_areas.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1"></script>
+<script src="/assets/form_templates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1"></script>
+<script src="/assets/form_widgets/carrierwave_preview_widget.self-432f62b9c9576bbd4a8c086162f00f5b4485e80699bae5d707aa40d3690752ab.js?body=1"></script>
+<script src="/assets/form_widgets/city_widget.self-de1817e0fe3ce9bae879eeff1c2a86635cfaa0d852203c99eefc6b996365669e.js?body=1"></script>
+<script src="/assets/form_widgets/identity_issuing_place_widget.self-5b614c89ed2917b8ad1465673deae549de7899e24001012176cd02538fb92244.js?body=1"></script>
+<script src="/assets/forms.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1"></script>
+<script src="/assets/scholarship_durations.self-ac807f5741cfb9f6a6d620776a4f2f5077f79598a0dba8823afd04de7bf3053c.js?body=1"></script>
+<script src="/assets/students.self-6fdca4d51f52b0773f57276100303536d41e769e3faaaff2cd51c39890451eae.js?body=1"></script>
+<script src="/assets/templates.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1"></script>
+<script src="/assets/webcam.min.self-6e8ef96594463f7f2005feab24c788491601cbf0df7a9c624ccff7dcfc9703c2.js?body=1"></script>
+<script src="/assets/application.self-4975bdcc3f5e1432b00ac96fd420c1145424d0a18a610029ca082ce0ee5a0f9f.js?body=1"></script>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="QopXn9d/C3q6736Cy18qkmALTQPftpxYZln31gcfaA9nRegLn455B09dKnwFreSIgEKYr7OJnxZyMag7P9mzLw==" />
+</head>
+<body>
+
+<span class="notice"></span>
+
+<div id='main_content'>
+  <div class='menu'>
+    <div class='header'>
+      <div class='logo'>
+        <a href="/">
+          <img src="/assets/logoSapos-2bfe733834f39699a6a62a759ff87318fe600d0b97c15c102b3fac7fb7cc5287.png" alt="Logosapos" />
+</a>      </div>
+      <div class="sub">
+        <span id="saposgif">
+          Versão 8dbda19
+ | <a href="/credits/show">Créditos</a>
+        </span>
+      </div>
+    </div>
+
+    <div class='menu_content' style="background: transparent;border: 0;">
+      
+      <div class='clear_float'></div>
+      <div class='content_wrapper'>
+        <div id='sub_navigation' style="display:none;"></div>
+        <div class='content'>
+          <div id='top_navigation' style="display:none;"><ul><li id="logout"><a href="/users/sign_out">Logout</a></li></ul></div>
+          <div class='clear_float'></div>
+          <div>
+            <div id="login_form_wrapper">
+
+  <div id="form_border">
+    <form id="login_form" class="new_user" action="/users/sign_in" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="L+Is8v/1srTynQ+NFR054R+gCvAh4kkmZbUHUTlWmGkKLZNmtwTAyQcvW3Pb7/f7/+nfXE3dSmhx3Vi8AZBDSQ==" />
+        
+
+        <div id="login_input">
+          <label for="user_email">Email</label>
+          <input type="email" value="" name="user[email]" id="user_email" />
+        </div>
+
+        <br/>
+
+        <div id="password_input">
+          <label for="user_password">Senha</label>
+          <input type="password" name="user[password]" id="user_password" />
+        </div>
+
+        <br/>
+
+
+            <div id="remember_me_input">
+              <div><input name="user[remember_me]" type="hidden" value="0" /><input type="checkbox" value="1" name="user[remember_me]" id="user_remember_me" /> <label for="user_remember_me">Lembrar de mim</label></div>
+            </div>
+
+
+        <br/>
+
+        <input type="submit" name="commit" value="Login" data-disable-with="Login" />
+</form>  </div>
+</div>
+
+
+  <a href="/users/password/new">Esqueceu a senha?</a><br />
+
+  <a href="/users/confirmation/new">Não recebeu informações de confirmação?</a><br />
+
+  <a href="/users/unlock/new">Não recebeu instruções de desbloqueio?</a><br />
+
+          </div>
+        </div>
+        <div class='clear_float'></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

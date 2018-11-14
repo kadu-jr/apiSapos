@@ -21,5 +21,12 @@ test:
   database: db/test.sqlite3
 
 production:
-  <<: *default
-  database: db/production.sqlite3
+  adapter: mysql2 #sqlite3
+  encoding: utf8
+  reconnect: false
+  database: sapos_api
+  pool: 5
+  #host: 34.219.167.34
+  username: root
+  password: root
+  socket: /var/run/mysqld/mysqld.sock

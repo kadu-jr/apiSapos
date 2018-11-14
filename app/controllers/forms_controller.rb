@@ -14,10 +14,10 @@ class FormsController < ApplicationController
     @form.query = Query.find(params[:query])
     @form.template = FormTemplate.find(params[:template])
     @form.save
-    puts(@form.errors.blank?)
-    puts @form.template_id
+    #puts(@form.errors.blank?)
+    #puts @form.template_id
     if (@form.errors.count > 0)
-      puts(@form.errors.messages)
+      #puts(@form.errors.messages)
     end
     render json: @form[:id]
   end
@@ -25,7 +25,7 @@ class FormsController < ApplicationController
   def update
     @form = Form.find(params[:id])
     @form.query_id = params[:query]
-    @form.form_template_id = params[:template]
+    @form.template_id = params[:template]
     @form.update(parameters)
     render json: @form
   end

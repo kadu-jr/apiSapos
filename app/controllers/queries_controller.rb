@@ -14,7 +14,7 @@ class QueriesController < ApplicationController
     params[:params].each do |p|
       param = {query_id: @query[:id], name: p[:name], value_type: p[:value_type], default_value: p[:default_value]}
       params = QueryParam.create(param)
-      puts params.errors.messages
+      #puts params.errors.messages
     end
     render json: @query[:id]
   end
@@ -25,7 +25,7 @@ class QueriesController < ApplicationController
     params[:params].each do |p|
       param = {query_id: @query[:id], name: p[:name], value_type: p[:value_type], default_value: p[:default_value]}
       params = QueryParam.create(query_parms(p))
-      puts params.errors.messages
+      #puts params.errors.messages
     end
     render json: @query
   end

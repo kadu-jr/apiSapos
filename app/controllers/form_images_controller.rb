@@ -18,7 +18,7 @@ class FormImagesController < ApplicationController
   def update
     @image = FormImage.find(params[:id])
     @image.update(parameters)
-    puts @image.errors.messages
+    #puts @image.errors.messages
     @image[:imagebase] = "Call show to view"
     render json: @image
   end

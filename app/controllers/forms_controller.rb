@@ -36,6 +36,14 @@ class FormsController < ApplicationController
     render json: {status: "ok"}
   end
 
+  # Delete the latest item
+  def delete
+    item = Form.last
+    id = item[:id]
+    item.destroy
+    render json: {id: id}
+  end
+
   private
   def parameters
     params.require(:form).permit(:id, :nome, :descricao, :query, :template)

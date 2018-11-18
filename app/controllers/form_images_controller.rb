@@ -29,6 +29,14 @@ class FormImagesController < ApplicationController
     render json: {status: "ok"}
   end
 
+  # Delete the latest item
+  def delete
+    item = FormImage.last
+    id = item[:id]
+    item.destroy
+    render json: {id: id}
+  end
+
   def logo
     record = FormImage.find params[:form_image_id]
     render json: record[:imagebase]

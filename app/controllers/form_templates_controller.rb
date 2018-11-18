@@ -29,6 +29,14 @@ class FormTemplatesController < ApplicationController
     render json: {status: "ok"}
   end
 
+  # Delete the latest item
+  def delete
+    item = FormTemplate.last
+    id = item[:id]
+    item.destroy
+    render json: {id: id}
+  end
+
   private
   def parameters
     params.require(:form_template).permit(:id, :name, :description, :code, :form_image)
